@@ -95,7 +95,6 @@ export const Styling = css`
   img {
     max-width: 100%;
     height: auto;
-    vertical-align: top;
   }
 
   ul {
@@ -112,6 +111,19 @@ export const Styling = css`
     &:hover {
       color: var(--accent-orange);
     }
+
+        &.active {
+      color: var(--accent-orange);
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: var(--accent-orange);
+      }
   }
 
   button {
@@ -121,6 +133,7 @@ export const Styling = css`
     background: none;
     outline: none;
     cursor: pointer;
+    transition: all 0.3s ease;
   }
 `;
 
@@ -135,7 +148,13 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-medium);
+  padding: 0 calc(var(--space-medium) + 4px);
 `;
+
+export const SectionWrapper = styled.section`
+  padding: 0;
+  margin-bottom: 60px;
+`;
+
 
 export default GlobalStyles;
