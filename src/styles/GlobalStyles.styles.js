@@ -126,7 +126,6 @@ export const Styling = css`
       }
   }
 
-  button {
     font-family: var(--font-primary);
     padding: 0;
     border: none;
@@ -134,7 +133,6 @@ export const Styling = css`
     outline: none;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
 `;
 
 export const GlobalStyles = createGlobalStyle`
@@ -146,9 +144,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 0 calc(var(--space-medium) + 4px);
+  padding: 0 20px;
 `;
 
 export const SectionWrapper = styled.section`
