@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container } from '../../styles/GlobalStyles.styles';
 import {Flex} from '../../styles/helpers.styles'
-import { NavbarSection, Logo, NavLinks} from './Header.styles';
-import Button from './../Buttons/index';
+import { NavbarSection, Logo, NavLinks} from './Navbar.styles';
+import Button from '../Buttons/index';
 import Logos from '../../assets/Logo.svg';
 
 const Navbar = () => {

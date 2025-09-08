@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {Flex} from '../../styles/helpers.styles';
 
-export const NavbarSection = styled.header`
+export const NavbarSection = styled.nav`
   background: var(--primary-orange);
   padding: var(--space-small) 0;
   position: sticky;
