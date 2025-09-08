@@ -1,8 +1,7 @@
 import styled, { css } from 'styled-components';
-
 export const Flex = styled.div`
   display: flex;
-  flex-wrap: ${props => !props.nowrap && 'wrap'};
+  flex-wrap: ${props => props.nowrap ? 'nowrap' : 'wrap'};
 
   ${props =>
     props.direction === 'column' &&

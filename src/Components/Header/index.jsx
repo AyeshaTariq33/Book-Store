@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container } from '../../styles/GlobalStyles.styles';
 import {Flex} from '../../styles/helpers.styles'
-import { NavbarSection, Logo, NavLinks, SignInButton } from './Header.styles';
+import { NavbarSection, Logo, NavLinks} from './Header.styles';
+import Button from './../Buttons/index';
 import Logos from '../../assets/Logo.svg';
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
               <a href="#service">Our Service</a>
               <a href="#contact">Contact us</a>
             </NavLinks>
-            <SignInButton>Sign In</SignInButton>
+            <Button>Sign In</Button>
           </Flex>
         </Flex>
       </Container>
