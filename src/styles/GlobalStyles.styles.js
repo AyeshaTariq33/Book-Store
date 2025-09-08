@@ -46,6 +46,8 @@ export const Styling = css`
     scroll-behavior: smooth;
     box-sizing: border-box; 
     font-family: var(--font-primary);
+    font-size: var(--text-small);
+    line-height: var(--line-height-normal);
   }
 
   *:before,
@@ -70,8 +72,8 @@ export const Styling = css`
   }
 
   h1, .h1 {
-    font-size: 32px;
-    line-height: var(--line-height-xl);
+    font-size: 38px;
+    line-height: 44px;
   }
 
   h2, .h2 {
@@ -87,7 +89,6 @@ export const Styling = css`
   p {
     color: var(--text-secondary);
     margin: 0 0 10px;
-    line-height: var(--line-height-normal);
 
     &:last-child {
       margin: 0;
@@ -146,7 +147,8 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const Wrapper = styled.div`
-  overflow: hidden;
+  // overflow: hidden;
+
 `;
 
 export const Container = styled.div`

@@ -2,6 +2,7 @@ import React from 'react';
 import GlobalStyles from './styles/GlobalStyles.styles';
 import { Wrapper } from './styles/GlobalStyles.styles';
 import Navbar from './Components/Navbar';
+import Header from './Components/Header';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <GlobalStyles />
       <Wrapper>
         <Navbar />
+        <Header />
       </Wrapper>
     </div>
   );
