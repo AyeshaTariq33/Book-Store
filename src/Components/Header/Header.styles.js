@@ -1,19 +1,19 @@
 import styled from 'styled-components';
-import { Flex } from '../../styles/helpers.styles';
+import {Flex} from '../../styles/helpers.styles';
 
 export const NavbarSection = styled.header`
-  background: var(--text-white);
-  padding: var(--space-medium) 0;
+  background: var(--primary-orange);
+  padding: var(--space-small) 0;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 `;
 
-export const LogoSection = styled(Flex)`
+export const Logo = styled(Flex)`
   align-items: center;
   cursor: pointer;
-  max-width: 60px;
+  max-width: 120px;
 `;
 
 
@@ -38,19 +38,17 @@ export const NavLinks = styled.nav`
 export const SignInButton = styled.button`
   background: var(--primary-purple);
   color: var(--text-white);
-  padding: 12px 24px;
-  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
   font-weight: var(--font-weight-medium);
   font-size: var(--text-normal);
   font-family: var(--font-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
   
   &:hover {
-    background: var(--primary-blue);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(91, 74, 107, 0.3);
-  }
-  
-  &:active {
-    transform: translateY(0);
+    background: var(--accent-orange);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 `;

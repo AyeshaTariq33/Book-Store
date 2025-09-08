@@ -3,6 +3,7 @@ import styled, { createGlobalStyle, css } from 'styled-components';
 export const Styling = css`
   :root {
     /* Brand Colors */
+    --primary-orange: #FDF8EE;
     --primary-purple: #5B4A6B;
     --primary-blue: #0F335E;
     --accent-orange: #FF7426;
@@ -44,6 +45,7 @@ export const Styling = css`
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box; 
+    font-family: var(--font-primary);
   }
 
   *:before,
@@ -126,6 +128,7 @@ export const Styling = css`
       }
   }
 
+  .btn {
     font-family: var(--font-primary);
     padding: 0;
     border: none;
@@ -133,6 +136,9 @@ export const Styling = css`
     outline: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-size: 16px;
+    line-height: 20px;
+    }
 `;
 
 export const GlobalStyles = createGlobalStyle`
