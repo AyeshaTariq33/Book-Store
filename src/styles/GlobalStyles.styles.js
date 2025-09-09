@@ -152,7 +152,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
-  max-width: 1240px;
+  width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
 `;

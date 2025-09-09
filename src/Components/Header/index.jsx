@@ -6,7 +6,6 @@ import backGround from '../../assets/headerBg.png';
 import image from '../../assets/headerImage.png';
 import ellipse from '../../assets/headerEllipse.png';
 
-npm 
 const Header = () => {
   return (
       <Section>
